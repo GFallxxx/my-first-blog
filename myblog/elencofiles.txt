@@ -1,0 +1,64 @@
+Elenco del percorso delle cartelle per il volume OS
+Numero di serie del volume: 00000200-E05C:76CE
+C:.
+|   admin.py
+|   apps.py
+|   elencofiles.txt
+|   forms.py
+|   models.py
+|   tests.py
+|   urls.py
+|   views.py
+|   __init__.py
+|   
+----migrations
+|   |   __init__.py
+|   |   
+|   |---__pycache__
+|           __init__.cpython-35.pyc
+|           
+----static
+|   ----css
+|   |       blog.css
+|   |       bootstrap-theme.css
+|   |       bootstrap-theme.css.map
+|   |       bootstrap-theme.min.css
+|   |       bootstrap-theme.min.css.map
+|   |       bootstrap.css
+|   |       bootstrap.css.map
+|   |       bootstrap.min.css
+|   |       bootstrap.min.css.map
+|   |       
+|   ----fonts
+|   |       glyphicons-halflings-regular.eot
+|   |       glyphicons-halflings-regular.svg
+|   |       glyphicons-halflings-regular.ttf
+|   |       glyphicons-halflings-regular.woff
+|   |       glyphicons-halflings-regular.woff2
+|   |       
+|   |---js
+|           bootstrap.js
+|           bootstrap.min.js
+|           npm.js
+|           
+----templates
+|   ----myblog
+|   |       base.html
+|   |       base1.html
+|   |       comment_edit.html
+|   |       post_detail.html
+|   |       post_draft.html
+|   |       post_edit.html
+|   |       post_list.html
+|   |       
+|   |---registration
+|           login.html
+|           
+|---__pycache__
+        admin.cpython-35.pyc
+        forms.cpython-35.pyc
+        models.cpython-35.pyc
+        urls.cpython-35.pyc
+        views.cpython-35.pyc
+        __init__.cpython-35.pyc
+        

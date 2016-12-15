@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HelloWorld</title>
+		<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"></link>
+		<link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}"></link>
+		<link rel="stylesheet" href="{% static 'css/blog.css' %}"></link>
+    </head>
+<body>
+	<div class="page-header">
+   {% if user.is_authenticated %}
+	<a href="{% url 'post_new' %}" class="top-menu" > <span class="glyphicon glyphicon-plus"  alt="Inserisci un nuovo post"> </span> </a>
+	<a href="{% url 'post_draft' %}" class="top-menu" > <span class="glyphicon glyphicon-edit"  alt="Verifica la presenza di post da pubblicare"> </span> </a>
+	<a href="{% url 'logout' %}" class="top-menu" > <span class="glyphicon glyphicon-star"  alt="Logout"> </span> </a>
+	{% else %}
+	<a href="{% url 'login' %}" class="top-menu" > <span class="glyphicon glyphicon-lock"  alt="Login"> </span> </a>
+	{% endif %}
+		<h1><a href="/"> My blog </a></h1>		
+	</div>
+	<div class="content container">
+		<div class="row">
+			<div class="col-md-8">
+
+				{% block content %}{% endblock content %}
+
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
